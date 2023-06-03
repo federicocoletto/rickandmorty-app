@@ -24,7 +24,7 @@ function App() {
 
 	return (
 		<div className='ram-app'>
-			<h1>Rick and Morty App</h1>
+			<div className='head'></div>
 			<FormSearch setIdLocation={setIdLocation}/>
 			{
 				hasError || (idLocation === 0)

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useRef } from "react"
+import "../css/formSearch.css"
 
 const FormSearch = ({setIdLocation}) => {
 
@@ -10,7 +11,7 @@ const FormSearch = ({setIdLocation}) => {
     }
 
     return (
-        <form onSubmit={handleSubmitSearch}>
+        <form onSubmit={handleSubmitSearch} className="form-container">
             <input 
                 type="text"
                 placeholder="Enter id location (from 0 to 126)"
