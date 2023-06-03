@@ -5,7 +5,7 @@
     --dark-green: #062226;
     --white: #f8f8f8;
     --black: #0a0a0a;
-    --grey: #515851;
+    --gray: #58785f;
     --alive: #55ca65;
     --dead: #c52020;
 
@@ -15,11 +15,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: .5px;
+    line-height: 1.5em;
 }
 
 #root {
     font-family: 'Poppins', sans-serif;
     background-color: var(--main-green);
+    min-height: 100vh;
 }
 
 img {

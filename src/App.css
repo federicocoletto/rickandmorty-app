@@ -1,5 +1,4 @@
 .ram-app {
-    max-width: 1024px;
     margin: 0 auto;
     display: grid;
     gap: 1em;
@@ -12,4 +11,30 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.location-container {
+    background-color: var(--dark-green);
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.residents-container {
+	width: 90%;
+    max-width: 1100px;
+    justify-content: center;
+    margin: 1em auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 300px);
+    gap: 1.5em;
 }

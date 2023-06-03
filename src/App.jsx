@@ -25,17 +25,21 @@ function App() {
 	return (
 		<div className='ram-app'>
 			<div className='head'></div>
-			<FormSearch setIdLocation={setIdLocation}/>
+			<div className="form-container">
+				<FormSearch setIdLocation={setIdLocation}/>
+			</div>
 			{
 				hasError || (idLocation === 0)
 					? <h1>Id location not valid. Only numbers from 1 to 126 😒</h1>
 					: (
 						<>
-							<LocationInfo location={location} />
-							<div className="residetns-container">
+							<div className="location-container">
+								<LocationInfo location={location} />
+							</div>
+							<div className="residents-container">
 								{
 									location?.residents.map(url => (
-										<ResidentCard key={url} url={url}/>
+											<ResidentCard key={url} url={url}/>
 									))
 								}
 							</div>

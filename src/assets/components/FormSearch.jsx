@@ -11,10 +11,10 @@ const FormSearch = ({setIdLocation}) => {
     }
 
     return (
-        <form onSubmit={handleSubmitSearch} className="form-container">
+        <form onSubmit={handleSubmitSearch} className="search-form">
             <input 
                 type="text"
-                placeholder="Enter id location (from 0 to 126)"
+                placeholder="Enter id location"
                 ref={inputSearch} />
             <button>Search</button>
         </form>
