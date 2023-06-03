@@ -1,11 +1,12 @@
 .ram-app {
+    max-width: 1024px;
     margin: 0 auto;
-    display: grid;
+    display: block;
     gap: 1em;
+    justify-content: center;
 }
 
 .head {
-    width: 100%;
     height: 150px;
     background-image: url('/public/portada_Rick_y_Morty.webp');
     background-repeat: no-repeat;
@@ -17,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: 2em 0;
 }
 
 .location-container {
@@ -25,16 +26,18 @@
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    padding-top: .6em;
     text-align: center;
+    box-shadow: 0 1px 5px 1px #0008;
+    border-radius: .5em;
 }
 
 
 .residents-container {
-	width: 90%;
-    max-width: 1100px;
+    margin: 2em auto;
+    width: 95%;
+    display: grid;
     justify-content: center;
-    margin: 1em auto;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 300px);
+	grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     gap: 1.5em;
 }

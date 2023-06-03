@@ -33,12 +33,25 @@ span.status {
 	font-size: .8rem;
 }
 
-span.status-circle {
+.status-circle {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
 	background-color: red;
 }
+
+.alive {
+	background-color: var(--alive);	
+}
+
+.unknown {
+	background-color: var(--gray);
+}
+
+.dead {
+	background-color: var(--dead);
+}
+
 span.status-circle::after {
 	content: '';
 }

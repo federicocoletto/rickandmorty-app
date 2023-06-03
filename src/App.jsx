@@ -20,7 +20,6 @@ function App() {
 		getApiLocation()
 	}, [idLocation])
 
-	console.log(idLocation);
 
 	return (
 		<div className='ram-app'>

@@ -1,7 +1,7 @@
 .search-form > input {
     border: none;
     height: 25px;
-    padding: 0 .3em;
+    padding-left: .3em;
     border-top-left-radius: .4em;
     border-bottom-left-radius: .4em;
     font-family: 'Poppins', sans-serif;
@@ -10,7 +10,7 @@
 .search-form > button {
     border: none;
     height: 25px;
-    padding: 0 1.2em;
+    padding: 0 .8em;
     border-top-right-radius: .4em;
     border-bottom-right-radius: .4em;
     background-color: var(--alive);
