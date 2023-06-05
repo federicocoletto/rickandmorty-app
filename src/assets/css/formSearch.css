@@ -19,3 +19,9 @@
     letter-spacing: 1px;
 }
 
+/* !
+/* HACER QUE EL BOTON SE PONGA ROJO CUANDO HAY ERROR */
+
+.isEmpty-msg {
+    color: var(--white);
+}

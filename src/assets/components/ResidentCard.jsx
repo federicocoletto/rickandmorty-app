@@ -12,9 +12,9 @@ const ResidentCard = ({url}) => {
     useEffect(() => {
         getApiResident()
     }, [])
-
     
-    return (        
+
+    return (
             <div className="resident-card">
                 <header>
                     <img src={resident?.image} alt="" />

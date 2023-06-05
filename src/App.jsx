@@ -13,6 +13,8 @@ function App() {
 	const randomId = getRandomNumber(126)
 	const [idLocation, setIdLocation] = useState(randomId) 
 	const url = `https://rickandmortyapi.com/api/location/${idLocation}`
+    const [isEmpty, setIsEmpty] = useState(false)
+
 	
 	const [location, getApiLocation, hasError] = useFetch(url)
 
@@ -25,11 +27,14 @@ function App() {
 		<div className='ram-app'>
 			<div className='head'></div>
 			<div className="form-container">
-				<FormSearch setIdLocation={setIdLocation}/>
+				<FormSearch 
+					setIdLocation={setIdLocation}
+					setIsEmpty={setIsEmpty}
+					isEmpty={isEmpty} />
 			</div>
 			{
 				hasError || (idLocation === 0)
-					? <h1>Id location not valid. Only numbers from 1 to 126 😒</h1>
+					? <h1 className='error-msg'>Id location not valid. Only numbers from 1 to 126 😒</h1>
 					: (
 						<>
 							<div className="location-container">

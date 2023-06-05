@@ -1,12 +1,14 @@
-
-.resident-card {
+.resident-card  {
 	display: flex;
 	flex-direction: column;
 	background: var(--dark-green);
 	border-radius: .5em;
 	box-shadow: 0 2px 10px #0008;
 	color: var(--white);
+	opacity: 1;
+	transition: all .5s;
 }
+
 
 .resident-card header {
 	position: relative;
